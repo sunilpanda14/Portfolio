@@ -77,9 +77,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- LinkedIn: [Sunil Kumar Panda](https://www.linkedin.com/in/your-linkedin-username)
+- LinkedIn: [Sunil Kumar Panda](https://www.linkedin.com/in/sunilkumarpanda/)
 - GitHub: [@sunilpanda14](https://github.com/sunilpanda14)
-- Email: [your.email@example.com](mailto:your.email@example.com)
+- Email: [sunilpanda14294@gmail.com](mailto:your.email@example.com)
 
 ---
 
