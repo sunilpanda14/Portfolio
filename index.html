@@ -420,6 +420,92 @@
       display: inline-block;
       vertical-align: middle;
     }
+    /* Contact Form Styles */
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #161b22;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border-radius: 4px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  color: #f5f5f5;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+.contact-alternative {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-alternative p {
+  color: #a8a8a8;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Hero Social Links */
+.hero-social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-social-links a {
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.hero-social-links a i {
+  color: #58a6ff;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.hero-social-links a:hover {
+  color: #58a6ff;
+}
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -445,6 +531,14 @@
         currently completing an MS in Biomechanics. I specialize in applying Machine Learning and AI 
         to solve complex challenges in medical device development and biomechanical engineering.
       </p>
+      <div class="hero-social-links fade-in delay-4">
+        <a href="https://github.com/sunilpanda14" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/sunilkumarpanda/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
       <a href="#contact" class="cta-button fade-in delay-4">Get In Touch</a>
     </section>
     
@@ -589,14 +683,42 @@
       </div>
     </section>
     
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2 class="contact-title">Get In Touch</h2>
-      <p class="contact-subtitle">
-        I'm passionate about advancing healthcare through AI and machine learning innovation. If you're interested in collaborating on MedTech projects, discussing research opportunities, or exploring how ML/AI can transform healthcare, let's connect!
-      </p>
-      <a href="mailto:sunil.panda@example.com" class="cta-button">Connect With Me</a>
-    </section>
+   <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="contact-subtitle">
+    I'm passionate about advancing healthcare through AI and machine learning innovation. If you're interested in collaborating on MedTech projects, discussing research opportunities, or exploring how ML/AI can transform healthcare, let's connect!
+  </p>
+  
+  <!-- Add this contact form below your existing content -->
+  <div class="contact-form-container">
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </div>
+  
+  <!-- Add your existing call-to-action button below the form -->
+  <div class="contact-alternative">
+    <p>Or reach out directly:</p>
+    <a href="mailto:info.sunilpanda@gmail.com" class="cta-button">Email Me</a>
+  </div>
+</section>
     
     <!-- Footer -->
     <footer>
